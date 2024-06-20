@@ -1,0 +1,28 @@
+<!DOCTYPE students[
+<!ELEMENT students (student+)> 
+<!ELEMENT student (name, address+, phone)>
+<!ELEMENT name(#PCDATA)>
+<!ELEMENT address(#PCDATA)>
+<!ELEMENT phone(#PCDATA)>
+<!ALLLIST address
+    type (permanent | temporary) #REQUIRED>
+<!ALLLIST phone
+    length CDATA #FIXED "10">
+]>
+
+<students>
+<student>
+<name>Binita Kumari Mandal</name>
+<address>Dharan</address>
+<phone>9812360071</phone>
+<website>www.binita336.com</website>
+</student>
+
+<students>
+<student>
+<name>R Sanvi Mandal</name>
+<address>Duhabi</address>
+<phone>9802900960</phone>
+<website>www.student123.com</website>
+</student>
+</students>
