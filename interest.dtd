@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE interest[
+    <!ELEMENT library (books+,employees+,member+,loans+)>
+    <!ELEMENT books(title,author+)>
+    <!ELEMENT title(#PCDATA)>
+    <!ELEMENT author(#PCDATA)>
+    <!ELEMENT employees(#PCDATA)>
+    <!ELEMENT Member(#PCDATA)>
+    <!ELEMENT loans(#PCDATA)>
+
+    <!ATTLIST books book CDATA #REQUIRED>
+    <!ATTLIST employees employee CDATA #REQUIRED>
+    <!ATTLIST member mem CDATA #REQUIRED>
+    <!ATTLIST title rating CDATA #IMPLIED
+                    language CDATA #IMPLIED>
+    <!ATTLIST loans loan CDATA #REQUIRED>
+]>
+
+<interest>
+    <library>
+        <books id="book">
+            <title>Web Technology</title>
+            <author>Binita</author>
+        </books>
+        <employees id="employee">Bhawana</employees>
+        <member id="mem">college students</member>
+       <loans id="loan">5 books at a time to students</loans> 
+    </library>
+</interest>
